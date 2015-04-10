@@ -21,6 +21,15 @@
 		DAE1D9351AD7F08100656B62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE1D9171AD7F08100656B62 /* UIKit.framework */; };
 		DAE1D93D1AD7F08100656B62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D93B1AD7F08100656B62 /* InfoPlist.strings */; };
 		DAE1D93F1AD7F08100656B62 /* OpenQuizzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE1D93E1AD7F08100656B62 /* OpenQuizzTests.m */; };
+		DAE1D94D1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_02.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D94A1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_02.png */; };
+		DAE1D94E1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_15.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D94B1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_15.png */; };
+		DAE1D94F1AD7F1B100656B62 /* maquette_app_aforpel_welcome-screen_02.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D94C1AD7F1B100656B62 /* maquette_app_aforpel_welcome-screen_02.png */; };
+		DAE1D9511AD7F24A00656B62 /* aforpel_welcome-screen_03.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D9501AD7F24A00656B62 /* aforpel_welcome-screen_03.png */; };
+		DAE1D9551AD7F27300656B62 /* PPCommonParameters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D9531AD7F27300656B62 /* PPCommonParameters.plist */; };
+		DAE1D9561AD7F28000656B62 /* PPLocalizableParameters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D9581AD7F28000656B62 /* PPLocalizableParameters.plist */; };
+		DAE1D95C1AD7F2B300656B62 /* ios_slider_bkg_07.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D95A1AD7F2B300656B62 /* ios_slider_bkg_07.png */; };
+		DAE1D95D1AD7F2B300656B62 /* ios_slider_bkg_10.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D95B1AD7F2B300656B62 /* ios_slider_bkg_10.png */; };
+		DAE1D95F1AD7F35B00656B62 /* OpenQuizzUserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE1D95E1AD7F35B00656B62 /* OpenQuizzUserData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,17 @@
 		DAE1D93A1AD7F08100656B62 /* OpenQuizzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenQuizzTests-Info.plist"; sourceTree = "<group>"; };
 		DAE1D93C1AD7F08100656B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAE1D93E1AD7F08100656B62 /* OpenQuizzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenQuizzTests.m; sourceTree = "<group>"; };
+		DAE1D9491AD7F10100656B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DAE1D94A1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maquette_app_aforpel_survey-screen_02.png"; sourceTree = "<group>"; };
+		DAE1D94B1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maquette_app_aforpel_survey-screen_15.png"; sourceTree = "<group>"; };
+		DAE1D94C1AD7F1B100656B62 /* maquette_app_aforpel_welcome-screen_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maquette_app_aforpel_welcome-screen_02.png"; sourceTree = "<group>"; };
+		DAE1D9501AD7F24A00656B62 /* aforpel_welcome-screen_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aforpel_welcome-screen_03.png"; sourceTree = "<group>"; };
+		DAE1D9531AD7F27300656B62 /* PPCommonParameters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PPCommonParameters.plist; sourceTree = "<group>"; };
+		DAE1D9571AD7F28000656B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/PPLocalizableParameters.plist; sourceTree = "<group>"; };
+		DAE1D9591AD7F28B00656B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/PPLocalizableParameters.plist; sourceTree = "<group>"; };
+		DAE1D95A1AD7F2B300656B62 /* ios_slider_bkg_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_slider_bkg_07.png; sourceTree = "<group>"; };
+		DAE1D95B1AD7F2B300656B62 /* ios_slider_bkg_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_slider_bkg_10.png; sourceTree = "<group>"; };
+		DAE1D95E1AD7F35B00656B62 /* OpenQuizzUserData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OpenQuizzUserData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +137,15 @@
 				DAE1D9251AD7F08100656B62 /* Main.storyboard */,
 				DAE1D9281AD7F08100656B62 /* PPViewController.h */,
 				DAE1D9291AD7F08100656B62 /* PPViewController.m */,
+				DAE1D9581AD7F28000656B62 /* PPLocalizableParameters.plist */,
+				DAE1D95E1AD7F35B00656B62 /* OpenQuizzUserData.plist */,
+				DAE1D9531AD7F27300656B62 /* PPCommonParameters.plist */,
+				DAE1D94A1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_02.png */,
+				DAE1D9501AD7F24A00656B62 /* aforpel_welcome-screen_03.png */,
+				DAE1D94B1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_15.png */,
+				DAE1D95A1AD7F2B300656B62 /* ios_slider_bkg_07.png */,
+				DAE1D95B1AD7F2B300656B62 /* ios_slider_bkg_10.png */,
+				DAE1D94C1AD7F1B100656B62 /* maquette_app_aforpel_welcome-screen_02.png */,
 				DAE1D92B1AD7F08100656B62 /* Images.xcassets */,
 				DAE1D91A1AD7F08100656B62 /* Supporting Files */,
 			);
@@ -229,9 +258,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE1D94F1AD7F1B100656B62 /* maquette_app_aforpel_welcome-screen_02.png in Resources */,
+				DAE1D95D1AD7F2B300656B62 /* ios_slider_bkg_10.png in Resources */,
+				DAE1D9551AD7F27300656B62 /* PPCommonParameters.plist in Resources */,
 				DAE1D92C1AD7F08100656B62 /* Images.xcassets in Resources */,
+				DAE1D94D1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_02.png in Resources */,
+				DAE1D9561AD7F28000656B62 /* PPLocalizableParameters.plist in Resources */,
+				DAE1D94E1AD7F1B100656B62 /* maquette_app_aforpel_survey-screen_15.png in Resources */,
+				DAE1D9511AD7F24A00656B62 /* aforpel_welcome-screen_03.png in Resources */,
 				DAE1D91E1AD7F08100656B62 /* InfoPlist.strings in Resources */,
+				DAE1D95C1AD7F2B300656B62 /* ios_slider_bkg_07.png in Resources */,
 				DAE1D9271AD7F08100656B62 /* Main.storyboard in Resources */,
+				DAE1D95F1AD7F35B00656B62 /* OpenQuizzUserData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +325,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DAE1D9261AD7F08100656B62 /* Base */,
+				DAE1D9491AD7F10100656B62 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -297,6 +336,15 @@
 				DAE1D93C1AD7F08100656B62 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAE1D9581AD7F28000656B62 /* PPLocalizableParameters.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAE1D9571AD7F28000656B62 /* Base */,
+				DAE1D9591AD7F28B00656B62 /* en */,
+			);
+			name = PPLocalizableParameters.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

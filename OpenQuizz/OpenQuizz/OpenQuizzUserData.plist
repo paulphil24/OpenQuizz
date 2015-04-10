@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Records</key>
+	<array>
+		<dict>
+			<key>quizdate</key>
+			<date>2015-01-23T10:55:23Z</date>
+			<key>quizname</key>
+			<string>quizmoncouple</string>
+			<key>quiztype</key>
+			<string>ods</string>
+			<key>quizresults</key>
+			<string>{&quot;c&quot;=3,&quot;e&quot;=2,&quot;m&quot;=4,&quot;s&quot;=1,&quot;v&quot;=3}</string>
+		</dict>
+	</array>
+</dict>
+</plist>

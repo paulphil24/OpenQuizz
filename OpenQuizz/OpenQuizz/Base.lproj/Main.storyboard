@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PPViewController" sceneMemberID="viewController">
@@ -12,19 +13,271 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFit" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrh-7J-QvW">
+                                <rect key="frame" x="0.0" y="20" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-rR-giK" userLabel="WelcomeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="419"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description du quizz et promesse de valeur sur 2 lignes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="277" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-an-qNA">
+                                                <rect key="frame" x="22" y="145" width="277" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="wVB-An-nlb">
+                                                <rect key="frame" x="20" y="354" width="280" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="icd-6g-ZEg"/>
+                                                    <constraint firstAttribute="width" constant="280" id="w53-uv-ynF"/>
+                                                </constraints>
+                                                <string key="text">Avertissement utilisateur
+                                                    (sur deux lignes)</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="maquette_app_aforpel_welcome-screen_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-2R-DEP">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="Kdg-cO-zwq"/>
+                                                    <constraint firstAttribute="height" constant="145" id="MoK-ul-1lO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment va mon couple ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-zN-v4q">
+                                                <rect key="frame" x="21" y="60" width="280" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <color key="textColor" red="0.75686281919999998" green="0.39607846740000002" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="redraw" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeH-lV-cpI">
+                                                <rect key="frame" x="90" y="199" width="140" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="gdS-KH-jMl"/>
+                                                    <constraint firstAttribute="width" constant="140" id="vcU-33-gTW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="COMMENCER" backgroundImage="aforpel_welcome-screen_03.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qzStart:" destination="vXZ-lx-hvc" eventType="touchDown" id="E4n-5I-eB5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="9k0-2R-DEP" firstAttribute="leading" secondItem="1r8-rR-giK" secondAttribute="leading" id="5DJ-U4-Ob0"/>
+                                            <constraint firstItem="OeH-lV-cpI" firstAttribute="top" secondItem="gqP-an-qNA" secondAttribute="bottom" constant="15" id="Aah-yG-6X0"/>
+                                            <constraint firstItem="9k0-2R-DEP" firstAttribute="centerX" secondItem="gqP-an-qNA" secondAttribute="centerX" id="CZl-u4-rfe"/>
+                                            <constraint firstItem="wVB-An-nlb" firstAttribute="top" secondItem="OeH-lV-cpI" secondAttribute="bottom" constant="15" id="HB5-7y-QJT"/>
+                                            <constraint firstItem="gqP-an-qNA" firstAttribute="top" secondItem="9k0-2R-DEP" secondAttribute="bottom" id="Nji-Yd-7m2"/>
+                                            <constraint firstAttribute="trailing" secondItem="wVB-An-nlb" secondAttribute="trailing" constant="20" id="OvW-ic-Xg1"/>
+                                            <constraint firstAttribute="trailing" secondItem="OeH-lV-cpI" secondAttribute="trailing" constant="90" id="Rse-Oe-Y3Y"/>
+                                            <constraint firstItem="wVB-An-nlb" firstAttribute="leading" secondItem="1r8-rR-giK" secondAttribute="leading" constant="20" id="ceq-iv-ylF"/>
+                                            <constraint firstItem="9k0-2R-DEP" firstAttribute="top" secondItem="1r8-rR-giK" secondAttribute="top" id="h3g-df-IrE"/>
+                                            <constraint firstItem="OeH-lV-cpI" firstAttribute="leading" secondItem="1r8-rR-giK" secondAttribute="leading" constant="90" id="qXP-q0-U7k"/>
+                                            <constraint firstAttribute="centerX" secondItem="gqP-an-qNA" secondAttribute="centerX" id="v0V-MN-fvN"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahi-lq-4FE" userLabel="QuizzView">
+                                        <rect key="frame" x="0.0" y="1" width="320" height="419"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="brn-4m-kcf">
+                                                <rect key="frame" x="40" y="115" width="260" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Quizz description
+                                                    and value proposition
+                                                    (tree lines)</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="maquette_app_aforpel_survey-screen_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="teg-06-Ejx">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="k8g-Ur-xpR"/>
+                                                    <constraint firstAttribute="height" constant="100" id="ouR-7z-wp9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment va mon couple ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCn-26-Ggy">
+                                                <rect key="frame" x="20" y="60" width="280" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="0.75686281919999998" green="0.39607846740000002" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="redraw" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-K3-zrK">
+                                                <rect key="frame" x="130" y="337" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="p8J-5A-d1F"/>
+                                                    <constraint firstAttribute="width" constant="60" id="vCp-4U-c4h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" backgroundImage="maquette_app_aforpel_survey-screen_15.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="qzNext:" destination="vXZ-lx-hvc" eventType="touchDown" id="4xX-Fy-7wW"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localized disclaimer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQp-bg-6BC">
+                                                <rect key="frame" x="40" y="217" width="260" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="45O-S6-zmF"/>
+                                                    <constraint firstAttribute="width" constant="260" id="CEZ-lH-8Gr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 00 sur 00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSE-GC-Syw">
+                                                <rect key="frame" x="160" y="86" width="130" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Rqx-ok-Rwc"/>
+                                                    <constraint firstAttribute="width" constant="130" id="kZA-JH-VCy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOTRE RÉPONSE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGT-k2-MbO">
+                                                <rect key="frame" x="40" y="192" width="160" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="OJ4-8W-gow"/>
+                                                    <constraint firstAttribute="height" constant="21" id="R2M-YE-wKm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" red="0.76470595600000002" green="0.42352944609999998" blue="0.87058830259999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="Lr7-lg-Ad0">
+                                                <rect key="frame" x="40" y="263" width="260" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </slider>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="brn-4m-kcf" firstAttribute="top" secondItem="KSE-GC-Syw" secondAttribute="bottom" constant="8" symbolic="YES" id="1WM-QY-5EY"/>
+                                            <constraint firstAttribute="centerX" secondItem="brn-4m-kcf" secondAttribute="centerX" constant="-10" id="8O5-WH-9xp"/>
+                                            <constraint firstAttribute="trailing" secondItem="Khv-K3-zrK" secondAttribute="trailing" constant="130" id="8Xl-ct-TGk"/>
+                                            <constraint firstItem="dGT-k2-MbO" firstAttribute="leading" secondItem="aQp-bg-6BC" secondAttribute="leading" id="ACm-7R-dOE"/>
+                                            <constraint firstItem="Khv-K3-zrK" firstAttribute="leading" secondItem="ahi-lq-4FE" secondAttribute="leading" constant="130" id="CVL-oq-qNk"/>
+                                            <constraint firstItem="aQp-bg-6BC" firstAttribute="top" secondItem="brn-4m-kcf" secondAttribute="bottom" constant="40" id="EhH-xo-o2O"/>
+                                            <constraint firstAttribute="trailing" secondItem="KSE-GC-Syw" secondAttribute="trailing" constant="30" id="GJV-Vn-glI"/>
+                                            <constraint firstItem="YCn-26-Ggy" firstAttribute="top" secondItem="ahi-lq-4FE" secondAttribute="top" constant="60" id="MIm-cO-Y4N"/>
+                                            <constraint firstItem="teg-06-Ejx" firstAttribute="leading" secondItem="ahi-lq-4FE" secondAttribute="leading" id="QbS-dN-Y2t"/>
+                                            <constraint firstItem="YCn-26-Ggy" firstAttribute="leading" secondItem="ahi-lq-4FE" secondAttribute="leading" constant="20" id="Raf-eQ-Yh2"/>
+                                            <constraint firstAttribute="trailing" secondItem="YCn-26-Ggy" secondAttribute="trailing" constant="20" id="W14-hb-wLd"/>
+                                            <constraint firstItem="brn-4m-kcf" firstAttribute="top" secondItem="teg-06-Ejx" secondAttribute="bottom" constant="15" id="W32-Dz-Uq3"/>
+                                            <constraint firstItem="dGT-k2-MbO" firstAttribute="top" secondItem="brn-4m-kcf" secondAttribute="bottom" constant="15" id="aaN-yr-wgB"/>
+                                            <constraint firstItem="dGT-k2-MbO" firstAttribute="top" secondItem="ahi-lq-4FE" secondAttribute="top" constant="192" id="ctI-lg-jAh"/>
+                                            <constraint firstItem="KSE-GC-Syw" firstAttribute="top" secondItem="YCn-26-Ggy" secondAttribute="bottom" constant="9" id="o5I-qB-JvW"/>
+                                            <constraint firstItem="dGT-k2-MbO" firstAttribute="leading" secondItem="brn-4m-kcf" secondAttribute="leading" id="vkU-ce-beO"/>
+                                            <constraint firstItem="teg-06-Ejx" firstAttribute="centerX" secondItem="brn-4m-kcf" secondAttribute="centerX" constant="-10" id="xPz-yS-cxJ"/>
+                                            <constraint firstItem="teg-06-Ejx" firstAttribute="top" secondItem="ahi-lq-4FE" secondAttribute="top" id="zN1-al-oks"/>
+                                            <constraint firstItem="Khv-K3-zrK" firstAttribute="top" secondItem="brn-4m-kcf" secondAttribute="bottom" constant="160" id="zRx-xI-Wag"/>
+                                            <constraint firstItem="dGT-k2-MbO" firstAttribute="leading" secondItem="ahi-lq-4FE" secondAttribute="leading" constant="40" id="zeX-2O-GeZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-X7-WqB" userLabel="ScoreView">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="422"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maquette_app_aforpel_survey-screen_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="PKf-x3-85L">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1r8-rR-giK" firstAttribute="leading" secondItem="Zrh-7J-QvW" secondAttribute="leading" id="Lik-F2-tWa"/>
+                                    <constraint firstItem="1r8-rR-giK" firstAttribute="trailing" secondItem="WNz-X7-WqB" secondAttribute="trailing" id="NBy-ee-beq"/>
+                                    <constraint firstAttribute="bottom" secondItem="ahi-lq-4FE" secondAttribute="bottom" id="Ox1-oH-Bpa"/>
+                                    <constraint firstItem="ahi-lq-4FE" firstAttribute="leading" secondItem="1r8-rR-giK" secondAttribute="leading" id="fSx-T8-yjc"/>
+                                    <constraint firstItem="1r8-rR-giK" firstAttribute="top" secondItem="Zrh-7J-QvW" secondAttribute="top" id="hJy-Oi-tea"/>
+                                    <constraint firstAttribute="bottom" secondItem="1r8-rR-giK" secondAttribute="bottom" constant="1" id="hkM-ux-obs"/>
+                                    <constraint firstAttribute="bottom" secondItem="WNz-X7-WqB" secondAttribute="bottom" constant="-2" id="iya-dL-c5t"/>
+                                    <constraint firstItem="ahi-lq-4FE" firstAttribute="centerY" secondItem="Zrh-7J-QvW" secondAttribute="centerY" id="kP2-70-Zpf"/>
+                                    <constraint firstItem="1r8-rR-giK" firstAttribute="leading" secondItem="WNz-X7-WqB" secondAttribute="leading" id="ora-LV-WjR"/>
+                                    <constraint firstItem="1r8-rR-giK" firstAttribute="top" secondItem="WNz-X7-WqB" secondAttribute="top" id="vCC-yE-399"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Copyright information and links" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-MS-S0t">
+                                <rect key="frame" x="0.0" y="440" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.74509805439999999" green="0.85882359740000003" blue="0.2588235438" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ncU-V7-xBu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.17254902420000001" green="0.2823529541" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LMV-MS-S0t" firstAttribute="trailing" secondItem="Zrh-7J-QvW" secondAttribute="trailing" id="8jM-95-CIA"/>
+                            <constraint firstItem="LMV-MS-S0t" firstAttribute="top" secondItem="Zrh-7J-QvW" secondAttribute="bottom" id="9m9-6R-B9c"/>
+                            <constraint firstItem="LMV-MS-S0t" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SWR-49-rmL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LMV-MS-S0t" secondAttribute="bottom" id="Yf4-lg-lIy"/>
+                            <constraint firstItem="LMV-MS-S0t" firstAttribute="leading" secondItem="Zrh-7J-QvW" secondAttribute="leading" id="dur-je-VLC"/>
+                            <constraint firstAttribute="trailing" secondItem="LMV-MS-S0t" secondAttribute="trailing" id="oJq-79-JmE"/>
+                            <constraint firstItem="Zrh-7J-QvW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="sxy-vB-hRG"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="qzAppTitle" destination="YCn-26-Ggy" id="1c9-yy-AwG"/>
+                        <outlet property="qzChosenAnswer" destination="aQp-bg-6BC" id="RpL-oj-qe5"/>
+                        <outlet property="qzQuestionCount" destination="KSE-GC-Syw" id="zSq-ou-8Hw"/>
+                        <outlet property="qzQuestionText" destination="brn-4m-kcf" id="TAU-Qy-Iuf"/>
+                        <outlet property="qzSlider" destination="Lr7-lg-Ad0" id="QUI-RX-Jgb"/>
+                        <outletCollection property="appViews" destination="1r8-rR-giK" id="oNw-hG-jhI"/>
+                        <outletCollection property="appViews" destination="ahi-lq-4FE" id="507-yi-Jss"/>
+                        <outletCollection property="appViews" destination="WNz-X7-WqB" id="hry-bU-V42"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="aforpel_welcome-screen_03.png" width="195" height="192"/>
+        <image name="maquette_app_aforpel_survey-screen_02.png" width="479" height="150"/>
+        <image name="maquette_app_aforpel_survey-screen_15.png" width="103" height="103"/>
+        <image name="maquette_app_aforpel_welcome-screen_02.png" width="480" height="217"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

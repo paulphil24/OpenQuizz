@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Values</key>
+	<array>
+		<string>Il (elle) me fait régulièrement des cadeaux</string>
+		<string>J&apos;apprécie sa façon de m&apos;aimer</string>
+		<string>Il (elle) me fait des compliments sur mon look</string>
+		<string>On dit que nous formons un beau couple</string>
+		<string>Il (elle) comble tous mes besoins</string>
+		<string>Il (elle) me donne beaucoup d&apos;affection</string>
+		<string>Nous partageons des moments très fusionnels</string>
+		<string>Il (elle) aime les mêmes choses que moi</string>
+		<string>Mes parents, mes amis, l&apos;apprécient</string>
+		<string>Nous avons la même conception de l&apos;amour</string>
+		<string>Nous faisons les mêmes activités</string>
+		<string>Lui (elle) et moi, aimons les mêmes choses</string>
+		<string>Il (elle) a le même niveau d&apos;études que moi</string>
+		<string>Il (elle) a un certain charisme</string>
+		<string>Nous partageons les mêmes domaines d&apos;intérêt</string>
+		<string>Nous sommes souvent ensemble</string>
+		<string>J&apos;aime bien qu&apos;il (elle) soit proche de moi</string>
+		<string>Il (elle) est de la même culture que moi</string>
+		<string>Nous fréquentons les mêmes amis</string>
+		<string>Nous partageons les mêmes ambitions</string>
+		<string>Il (elle) me sécurise</string>
+		<string>Je peux être moi-même en sa présence</string>
+		<string>Je me sens compris(e) quand je lui parle de moi</string>
+		<string>Il (elle) a l&apos;estime de mes amis</string>
+		<string>Nous avons les mêmes valeurs</string>
+	</array>
+	<key>Answers</key>
+	<array>
+		<string>Déplacez la flèche pour choisir une réponse</string>
+		<string>Cest totalement faux</string>
+		<string>C&apos;est le plus souvent faux</string>
+		<string>C&apos;est aussi souvent vrai que faux</string>
+		<string>C&apos;est assez vrai</string>
+		<string>C&apos;est souvent vrai</string>
+		<string>C&apos;est toujours vrai</string>
+	</array>
+	<key>ODSComments</key>
+	<array>
+		<dict>
+			<key>odskey</key>
+			<string>g</string>
+			<key>low</key>
+			<string>Votre couple est en danger. Consultez sans attendre un thérapeute qui vous aidera à faire le point.</string>
+			<key>mid</key>
+			<string>Plusieurs points importants méritent votre attention. Parlez plus avec votre conjoint(e) pour résoudre ensemble les problèmes.</string>
+			<key>high</key>
+			<string>La météo de votre couple est au beau fixe. Profitez-en et préservez cet atout précieux.</string>
+		</dict>
+		<dict>
+			<key>odskey</key>
+			<string>m</string>
+			<key>low</key>
+			<string>Point faible</string>
+			<key>mid</key>
+			<string>Point à renforcer</string>
+			<key>high</key>
+			<string>Point fort</string>
+		</dict>
+		<dict>
+			<key>odskey</key>
+			<string>e</string>
+			<key>low</key>
+			<string>Point faible</string>
+			<key>mid</key>
+			<string>Point à renforcer</string>
+			<key>high</key>
+			<string>Point fort</string>
+		</dict>
+		<dict>
+			<key>odskey</key>
+			<string>c</string>
+			<key>low</key>
+			<string>Point faible</string>
+			<key>mid</key>
+			<string>Point à renforcer</string>
+			<key>high</key>
+			<string>Point fort</string>
+		</dict>
+		<dict>
+			<key>odskey</key>
+			<string>s</string>
+			<key>low</key>
+			<string>Point faible</string>
+			<key>mid</key>
+			<string>Point à renforcer</string>
+			<key>high</key>
+			<string>Point fort</string>
+		</dict>
+		<dict>
+			<key>odskey</key>
+			<string>v</string>
+			<key>low</key>
+			<string>Point faible</string>
+			<key>mid</key>
+			<string>Point à renforcer</string>
+			<key>high</key>
+			<string>Point fort</string>
+		</dict>
+	</array>
+</dict>
+</plist>
