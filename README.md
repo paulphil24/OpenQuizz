@@ -1,1 +1,1 @@
-# psyquizz
+# OpenQuizz
